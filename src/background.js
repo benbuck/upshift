@@ -1,7 +1,9 @@
 // upshift - Copyright (C) 2011 Benbuck Nason
 
+//console.log("background.js");
+
 function updateIcon(tabId) {
-	//console.log("get: " + tab.url);
+	//console.log("updateIcon: " + tabId);
 	chrome.pageAction.show(tabId);
 }
 
@@ -15,20 +17,19 @@ chrome.tabs.getSelected(null, function(tab) {
 	updateIcon(tab.id);
 });
 
-chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo) {
 	//console.log("onUpdated: " + tabId);
 	updateIcon(tabId);
 });
 
-chrome.extension.onMessage.addListener(function(msg) {
-	//console.log("onMessage: " + msg);
-	if (msg.upshiftCount) {
+chrome.commands.onCommand.addListener(function(command) {
+	//console.log('Command:', command);
+	if (command == "upshift_one_level") {
 		chrome.tabs.getSelected(null, function(tab) {
 			chrome.pageAction.hide(tab.id);
 			var uris = upshift.get(tab.url);
-			var upshiftCount = (msg.upshiftCount < uris.length) ? msg.upshiftCount : uris.length - 1;
-			//console.log("upshifting " + upshiftCount + " to " + uris[upshiftCount]);
-			chrome.tabs.update(tab.id, {'url': uris[upshiftCount]});
+			//console.log("upshifting to " + uris[0]);
+			chrome.tabs.update(tab.id, {'url': uris[0]});
 		});
 	}
 });
