@@ -17,7 +17,7 @@ To install Upshift, go to the Chrome Web Store: https://chrome.google.com/websto
 To see the source code, go to GitHub: https://github.com/benbuck/upshift
 
 To see the change log, go here:
-![CHANGELOG.md](https://github.com/benbuck/upshift/blob/master/CHANGELOG.md)
+https://github.com/benbuck/upshift/blob/master/CHANGELOG.md
 
 ---
 Copyright (C) 2011 Benbuck Nason
