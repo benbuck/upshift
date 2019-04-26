@@ -8,7 +8,10 @@
 	"icons": {
 		"16": "icon_16.png",
 		"19": "icon_19.png",
+		"32": "icon_32.png",
+		"38": "icon_38.png",
 		"48": "icon_48.png",
+		"64": "icon_64.png",
 		"128": "icon_128.png"
 	},
 
@@ -16,7 +19,10 @@
 		"default_icon": {
 			"16": "icon_16.png",
 			"19": "icon_19.png",
+			"32": "icon_32.png",
+			"38": "icon_38.png",
 			"48": "icon_48.png",
+			"64": "icon_64.png",
 			"128": "icon_128.png"
 		},
 		"default_title": "Upshift",
