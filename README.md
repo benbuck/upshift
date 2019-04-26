@@ -16,13 +16,8 @@ To install Upshift, go to the Chrome Web Store: https://chrome.google.com/websto
 
 To see the source code, go to GitHub: https://github.com/benbuck/upshift
 
-## Changes
-
-Version 3.0, 2018-09-28
-- Fix Ctrl+Up keyboard shortcut.
-
-Version 2.3, 2012-07-18
-- First release added to GitHub
+To see the change log, go here:
+![CHANGELOG.md](https://github.com/benbuck/upshift/CHANGELOG.md)
 
 ---
 Copyright (C) 2011 Benbuck Nason
