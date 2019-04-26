@@ -8,7 +8,7 @@ When you click on the Upshift icon, it will pop up a list of new addresses that 
 
 You can use shift+click to open the address in a new window, or ctrl+click / middle mouse click to open the address in a new tab. There is a keyboard shortcut, ctrl+up, that allows you to go up one level in the current address.
 
-Upshift also provides a list of recently visited addresses on the same site (this requires permission to access your browsing history).
+Upshift also provides a list of recently visited addresses on the same site (this requires permission to access your browsing history). This data is not used for any other purpose, or saved or sent anywhere.
 
 ## How to get it
 
