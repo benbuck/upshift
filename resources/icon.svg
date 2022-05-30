@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- upshift - Copyright (C) 2011 Benbuck Nason -->
+
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512">
     <defs>
         <filter id="blur">
@@ -6,8 +9,7 @@
         </filter>
     </defs>
     <g>
-        <path fill="#111" stroke="#ddd" stroke-width="20" filter="url(#blur)"
-            d="m 15,15 h 350 l 120,120 h -250 l 260,260 v 100 h -100 l -260,-260 v 250 l -120,-120 z">
+        <path fill="#111" stroke="#ddd" stroke-width="20" filter="url(#blur)" d="m 15,15 h 350 l 120,120 h -250 l 260,260 v 100 h -100 l -260,-260 v 250 l -120,-120 z">
         </path>
     </g>
 </svg>

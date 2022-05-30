@@ -1,0 +1,38 @@
+{
+  "name": "upshift",
+  "version": "3.2",
+  "description": "Upshift is an extension for the Chrome browser that allows you to quickly navigate up levels in a web site address.",
+  "main": "./build/popup.js",
+  "author": "Benbuck Nason",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benbuck/upshift.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "navigate",
+    "up",
+    "address"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benbuck/upshift/issues"
+  },
+  "homepage": "https://github.com/benbuck/upshift",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "convert-icon": "npx mkdirp build && magick convert -background none -define png:include-chunk=none,tEXt -comment \"Copyright 2011 Benbuck Nason\" -size 48x48 resources/icon.svg build/icon.png && magick convert -background none -define png:include-chunk=none,tEXt -comment \"Copyright 2011 Benbuck Nason\" -size 128x128 resources/icon.svg build/icon_128.png && magick convert -background none -define png:include-chunk=none,tEXt -comment \"Copyright 2011 Benbuck Nason\" -size 64x64 resources/icon.svg build/icon_64.png && magick convert -background none -define png:include-chunk=none,tEXt -comment \"Copyright 2011 Benbuck Nason\" -size 48x48 resources/icon.svg build/icon_48.png && magick convert -background none -define png:include-chunk=none,tEXt -comment \"Copyright 2011 Benbuck Nason\" -size 38x38 resources/icon.svg build/icon_38.png && magick convert -background none -define png:include-chunk=none,tEXt -comment \"Copyright 2011 Benbuck Nason\" -size 32x32 resources/icon.svg build/icon_32.png && magick convert -background none -define png:include-chunk=none,tEXt -comment \"Copyright 2011 Benbuck Nason\" -size 19x19 resources/icon.svg build/icon_19.png && magick convert -background none -define png:include-chunk=none,tEXt -comment \"Copyright 2011 Benbuck Nason\" -size 16x16 resources/icon.svg build/icon_16.png",
+    "copy-extra": "npx copyfiles --up 1 src/manifest.json src/popup.html build",
+    "build": "npm run compile && npm run copy-extra && npm run convert-icon",
+    "package": "npm-build-zip --destination=releases"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.168",
+    "copyfiles": "^2.4.1",
+    "mkdirp": "^1.0.4",
+    "npm-build-zip": "^1.0.3",
+    "typescript": "^4.5.2"
+  }
+}

@@ -12,12 +12,12 @@ Upshift also provides a list of recently visited addresses on the same site (thi
 
 ## How to get it
 
-To install Upshift, go to the Chrome Web Store: https://chrome.google.com/webstore/detail/upshift/nmibphlpgkekcpbplklgdfmiphfdfhdi
+To install Upshift, go to the [Chrome Web Store page](https://chrome.google.com/webstore/detail/upshift/nmibphlpgkekcpbplklgdfmiphfdfhdi).
 
-To see the source code, go to GitHub: https://github.com/benbuck/upshift
+To see the source code, go to the [GitHub project page](https://github.com/benbuck/upshift).
 
-To see the change log, go here:
-https://github.com/benbuck/upshift/blob/master/CHANGELOG.md
+To see the change log, go to the [GitHub change log page](https://github.com/benbuck/upshift/blob/master/CHANGELOG.md).
 
 ---
+
 Copyright (C) 2011 Benbuck Nason

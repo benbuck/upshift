@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "outDir": "build",
+    "lib": ["DOM", "ES6"],
+    "types": ["chrome"],
+    "sourceMap": false,
+    "forceConsistentCasingInFileNames": true,
+    "removeComments": false,
+    "alwaysStrict": true,
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "include": ["src/*.ts"]
+}
