@@ -4,11 +4,11 @@ Upshift is an extension for the Chrome browser that allows you to quickly naviga
 
 When you click on the Upshift icon, it will pop up a list of new addresses that you can select, which all go increasingly higher in the address of the site you are currently viewing:
 
-![Screenshot](https://raw.githubusercontent.com/benbuck/upshift/master/resources/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/benbuck/upshift/master/resources/screenshot-1280x800.png)
 
 You can use shift+click to open the address in a new window, or ctrl+click / middle mouse click to open the address in a new tab. There is a keyboard shortcut, ctrl+up, that allows you to go up one level in the current address.
 
-Upshift also provides a list of recently visited addresses on the same site (this requires permission to access your browsing history). This data is not used for any other purpose, or saved or sent anywhere.
+Upshift does not use your data for any other purpose, or save or send anywhere.
 
 ## How to get it
 
