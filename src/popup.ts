@@ -84,7 +84,7 @@ var spanCount: number;
 function init() {
   // console.log("init");
   spanCount = 0;
-  chrome.tabs.query({ active: true }, function (tabs) {
+  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     // console.log("get: " + JSON.stringify(tabs));
     if (tabs.length > 0) {
       buildPopup(tabs[0]);
