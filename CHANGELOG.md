@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.1 - 2023-02-24
+
+- Fix query window
+
 ## 4.0 - 2022-05-29
 
 - Remove history feature

@@ -1,6 +1,6 @@
 {
   "name": "upshift",
-  "version": "4.0",
+  "version": "4.1",
   "description": "Upshift is an extension for the Chrome browser that allows you to quickly navigate up levels in a web site address.",
   "main": "./build/popup.js",
   "author": "Benbuck Nason",
