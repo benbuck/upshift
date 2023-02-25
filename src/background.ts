@@ -90,7 +90,7 @@ chrome.tabs.onActivated.addListener(function (activeInfo) {
   updateIcon(activeInfo.tabId);
 });
 
-chrome.tabs.query({ active: true }, function (tabs: chrome.tabs.Tab[]) {
+chrome.tabs.query({ active: true, currentWindow: true }, function (tabs: chrome.tabs.Tab[]) {
   // console.log("getSelected: " + tab.id);
   if (tabs.length > 0) {
     var tab = tabs[0];
@@ -108,7 +108,7 @@ chrome.tabs.onUpdated.addListener(function (tabId: number) {
 chrome.commands.onCommand.addListener(function (command) {
   // console.log('Command:', command);
   if (command == "upshift_one_level") {
-    chrome.tabs.query({ active: true }, function (tabs: chrome.tabs.Tab[]) {
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs: chrome.tabs.Tab[]) {
       if (tabs.length > 0) {
         var tab = tabs[0];
         if (typeof tab.id !== "undefined" && typeof tab.url !== "undefined") {
